@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./calcu.css" />
+    <title>Caculator</title>
+  </head>
+  <body>
+    <div class="main">
+      <h5 class="currentEntry"></h5>
+      <h3 class="output"></h3>
+      <button class="operators" id="ac" onclick="clearAll('AC')">AC</button>
+      <button class="digits" onclick="makeExp('1')">1</button>
+      <button class="digits" onclick="makeExp('2')">2</button>
+      <button class="digits" onclick="makeExp('3')">3</button>
+      <button class="operators" onclick="makeExp('+')">+</button>
+      <br />
+      <button class="operators" id="del" onclick="remove()">DEL</button>
+
+      <button class="digits" onclick="makeExp('4')">4</button>
+      <button class="digits" onclick="makeExp('5')">5</button>
+      <button class="digits" onclick="makeExp('6')">6</button>
+      <button class="operators" onclick="makeExp('-')">-</button>
+
+      <br />
+      <button class="equal" onclick="calculate()">=</button>
+
+      <button class="digits" onclick="makeExp('7')">7</button>
+      <button class="digits" onclick="makeExp('8')">8</button>
+      <button class="digits" onclick="makeExp('9')">9</button>
+      <button class="operators" onclick="makeExp('*')">x</button>
+
+      <br />
+      <button class="operators" onclick="makeExp('.')">.</button>
+      <button class="operators" onclick="makeExp('%')">%</button>
+      <button class="digits" onclick="makeExp('0')">0</button>
+      <button class="operators" onclick="makeExp('/')">÷</button>
+      <button class="operators" onclick="sqrcalcu()">√</button>
+
+      <br />
+
+      <!-- <button onclick="calculate()">=</button> -->
+    </div>
+
+    <script src="./calcu.js"></script>
+  </body>
+</html>
